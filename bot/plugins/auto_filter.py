@@ -184,13 +184,13 @@ async def auto_filter(bot: Client, update: Message):
                 if ((len(ibuttons)%2) == 0):
                     ibuttons.append(
                         [
-                            InlineKeyboardButton(f"⚜ {chat_name} ⚜", url=invite_link)
+                            InlineKeyboardButton(f"⚜ {chat_name} ⚜")
                         ]
                     )
 
                 else:
                     ibuttons[-1].append(
-                        InlineKeyboardButton(f"⚜ {chat_name} ⚜", url=invite_link)
+                        InlineKeyboardButton(f"⚜ {chat_name} ⚜")
                     )
                 
             for x in ibuttons:
